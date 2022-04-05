@@ -1,0 +1,9 @@
+.item1 {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+.whole {
+    width: 500px;
+    margin: 0 auto;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="m-pat">
+        <button class="accordion">What are the requirements in order to get started with Midocommerce?</button>
+        <div class="panel">
+        <p>You need 3 things. 1) Liquid capital to invest: $20,000 to $30,000 USD. 2) At least $10,000 USD in credit lines or credit cards. 3) A company in the USA, rather an LLC or CORP.</p>
+        </div>
+    </div>
+    <div class="m-pat">
+        <button class="accordion">Who is this service for?</button>
+        <div class="panel">
+        <p>This service is for people who want to build Passive Income through eCommerce. We will manage for you all daily tasks on your store: Product research, price optimization, product upload, sales, fulfillment, customer service, refunds and accountability in your Amazon Store.</p>
+        </div>
+    </div>
+    <div class="m-pat">
+        <button class="accordion">How much time I need to dedicate to this business?</button>
+        <div class="panel">
+        <p>At the beginning, at least 2-3 hours in total to fill out all the applications, Google Forms, Documents, Information for the Tax Exemption, Company Information, etc. The first month you will need to be aware of the email for any documents that are needed to continue with Tax Exemption. These documents are certificates that arrive for your company, which you will need to scan or send by mail to one of our employees who we will assign to take care of the entire process of being Tax Exempted. Another time that you should dedicate to the business is when receiving payments. Once you receive the payments from Amazon every (14) days, you must pay your Credit Card, and pay the Invoices that we will send you from the 30% or 40% Performance Fee (Depending on the contract you have: 60/40 or 70/30). </p>
+        </div>
+    </div>
+    <div class="m-pat">
+        <button class="accordion">When my store will be hitting $8,000 to $12,000 USD / month in profit?</button>
+        <div class="panel">
+        <p>If you have enough credit, in month number 5 or 6 we would be hitting at least $5,000 USD+ per month in profit for you.</p>
+        </div>
+    </div>
+    <div class="m-pat">
+        <button class="accordion">Do you have a money-back guarantee?</button>
+        <div class="panel">
+        <p>Yes! Your investment is 100% secured by contract with Midocommerce. We offer all our clients a 100% money-back guarantee.</p>
+        </div>
+    </div>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+
+</body>
+</html>

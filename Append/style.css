@@ -1,0 +1,53 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(34, 0, 34);
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 100vh;
+    max-width: 100vh;
+    margin: 40vh auto;
+
+}
+nav {
+    background-color: rgb(87, 36, 87);
+    border-radius: 40px;
+    padding: 10px 30px;
+}
+nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li {
+    list-style: none;
+    position: relative;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+ul li span {
+    position: relative;
+    display: block;
+    z-index: 10;
+}
+li .append {
+    inset: 0;
+    position: absolute;
+    /* height: 10px;
+    width: 100px;
+    bottom: 0; */
+    background-color: rgb(145, 43, 145);
+    border-radius: 30px;
+    z-index: 0;
+    transition: transform 300ms;
+    transform-origin: 100% 50% 0px;
+    transform: translate3d(0px, 0px, 0px);
+}
