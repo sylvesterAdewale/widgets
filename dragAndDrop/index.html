@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Document</title>
+</head>
+<script>
+    function allowDrop(e) {
+        e.preventDefault()
+    }
+    function drag(e) {
+        e.dataTransfer.setData("text", e.target.id)
+    }
+    function drop(e) {
+        e.preventDefault();
+        var data = e.dataTransfer.getData("text")
+        e.target.appendChild(document.getElementById(data))
+    }
+</script>
+<body>
+    <div>
+        <p>drag the text below inside the box</p>
+        <div id="main" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <h1 id="drag" ondragstart="drag(event)" draggable="true">Drag And Drop Text</h1>
+    </div>
+</body>
+</html>

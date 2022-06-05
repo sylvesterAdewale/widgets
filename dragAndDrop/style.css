@@ -1,0 +1,22 @@
+body {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+    width: 666px;
+    height: 96px;
+    padding: 10px;
+    font-size: 46px;
+    border: 1px solid black;
+    position: relative;
+    cursor: pointer;
+}
+#drag {
+    padding: 10px;
+    font-size: 46px;
+    text-align: center;
+    cursor: pointer;
+}
